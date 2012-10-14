@@ -143,6 +143,11 @@ public class ServletJSONProcessorTest extends Client {
             values.remove(key);
         }
 
+        @Override
+        public void put(String key, String value) {
+            values.put(key, value);
+        }
+
     }
 
 }

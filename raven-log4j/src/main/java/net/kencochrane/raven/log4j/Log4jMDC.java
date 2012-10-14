@@ -36,4 +36,9 @@ public class Log4jMDC extends RavenMDC {
         MDC.remove(key);
     }
 
+    @Override
+    public void put(String key, String value) {
+        MDC.put(key, value);
+    }
+
 }
